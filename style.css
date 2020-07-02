@@ -1,63 +1,314 @@
-html, body{
-	margin: 0px;
-	padding: 0px;
-	font-siz: 16px;
-	
+/* global styles */
+html {
+    padding: 0px;
+    font-siz: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0px 15px;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-li{
-	display: inline;
+li {
+    display: inline;
 }
 
-.maintenance{
-	background: #1A73E8;
+/*End of gloabal declarations*/
+
+nav {
+    padding: 0 15px;
+    background: #ffffff;
 }
 
+.logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item.button {
+    padding: 9px 5px;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #ccc;
+}
+
+.maintenance {
+    background: rgb(72, 142, 255, 0.1);
+    padding: 20px;
+}
 
 .container {
-	max-width: 1000px;
-	margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 60px 0px;
+}
+
+aside {
+    margin: 0px 30px;
+}
+
+.col-section-1 {
+    width: 50%;
 
 }
 
-section{
-	margin: 60px 0px;
-}
-
-aside{
-	margin: 0px 30px;
-}
-.col-section-1{
-	width: 50%;
+.col-section-2 {
+    display: inline;
+    width: 50%;
+    align-items: center;
 
 }
 
+.feuture_on {
+    text-align: center;
+}
 
-.col-section-2{
-	display: inline;
-	width: 50%;
-	align-items: center;
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.menu li.subitem a {
+    padding: 15px;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item {
+    display: block;
+}
+
+.button.secondary { /* divider between buttons and menu links */
+    border-bottom: 1px #444 solid;
+}
+
+.jumbotoron {
+    background: rgb(72, 142, 255, 0.1);
+}
+
+.headache h4 {
+
+    font-size: 40px;
+}
+
+.headache h5 {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: oblique;
+}
+
+.headache p {
+    font-weight: lighter;
+}
+
+.button {
+    background: rgb(22, 142, 255);
+    border: 1px solid rgb(22, 142, 255);
+    border-radius: 20px 0px 20px 0px;
+
+    padding: 12px 20px;
+    width: 100px;
+}
+
+.headache {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.clients {
+    text-align: center;
+}
+
+.say {
+    margin-bottom: 30px;
+}
+
+.person {
+    display: flex;
+    justify-content: center;
+}
+
+.person1 {
+    padding: 0px 15px;
+}
+
+.clientsbackground {
+    background: rgb(72, 142, 255, 0.1);
+    padding: 20px 0px;
+}
+
+.explainto {
+    background: rgb(44, 57, 100);
+    padding: 50px;
+    color: white;
+    border: 1px solid rgb(44, 57, 100);
+    border-radius: 0px 30px 0px 30px;
+    display: flex;
+}
+
+.explainbutton {
+    postion: relative;
 
 }
 
-
-
+.explainbutton .button {
+    position: absolute;
+    button: 50px;
+}
 
 /* Responsive */
 
 
 @media only screen and (min-width: 600px) {
-	.sectionimages{
-		display: flex;
-	}
+    .explainto {
+        display: flex;
+    }
 
+    .explainleft {
+
+        margin-right: 70px;
+    }
+
+    .sectionimages {
+        display: flex;
+    }
+
+
+    .logosection {
+        display: flex;
+        margin: 30px 0px;
+    }
+
+    .logosection div {
+        margin: 0 26px;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+
+    /* Button up from tablet screen */
+    .menu li.button a {
+        padding: 10px 15px;
+        margin: 5px 0;
+    }
+
+    .button a {
+        background: #0080ff;
+        border: 1px royalblue solid;
+    }
+
+    .button.secondary {
+        border: 0;
+    }
+
+    .button.secondary a {
+        background: transparent;
+        border: 1px #0080ff solid;
+    }
+
+    .button a:hover {
+        text-decoration: none;
+    }
+
+    .button:not(.secondary) a:hover {
+        background: royalblue;
+        border-color: darkblue;
+    }
+
+    .menu {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .submenu-active .submenu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 68px;
+        background: #111;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .submenu-active {
+        border-radius: 0;
+    }
 
 
 }
