@@ -3,6 +3,12 @@
         padding: 0px;
         font-siz: 16px;
         font-family: roboto;
+
+    }
+
+    body[data-aos-duration='225'] [data-aos],
+    [data-aos][data-aos][data-aos-duration='225']{
+        transition-duration: 3000ms;
     }
     @font-face {
         font-family: roboto;
@@ -103,9 +109,7 @@
         padding: 15px 5px;
     }
 
-    .menu li.subitem a {
-        padding: 15px;
-    }
+
 
     .toggle {
         order: 1;
