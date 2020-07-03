@@ -1,2 +1,2 @@
 # codechewing
-Practicing ofr codechewing
+Practicing for codechewing
