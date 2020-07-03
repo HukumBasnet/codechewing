@@ -36,9 +36,11 @@ function toggleItem() {
 }
 
 /* Event Listeners */
-for (let item of items) {
-    if (item.querySelector(".submenu")) {
-        item.addEventListener("click", toggleItem, false);
-        item.addEventListener("keypress", toggleItem, false);
+
+function closeSubmenu(e) {
+    let isClickInside = menu.contains(e.target);
+
+    if (!isClickInside && menu.querySelector(".submenu-active")) {
+        menu.querySelector(".submenu-active").classList.remove("submenu-active");
     }
 }

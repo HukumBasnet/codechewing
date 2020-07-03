@@ -1,402 +1,360 @@
 /* global styles */
-html {
-    padding: 0px;
-    font-siz: 16px;
-    font-family: roboto;
-}
-@font-face {
-    font-family: roboto;
-    src: url(font/RobotoSlab-VariableFont_wght.ttf);
-}
+    html {
+        padding: 0px;
+        font-siz: 16px;
+        font-family: roboto;
+    }
+    @font-face {
+        font-family: roboto;
+        src: url(font/RobotoSlab-VariableFont_wght.ttf);
+    }
 
-body {
-    margin: 0px 15px;
-}
+    body {
+        margin: 0px 15px;
+    }
 
-a {
-    text-decoration: none;
-}
+    a {
+        text-decoration: none;
+    }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-li {
-    display: inline;
-}
+    li {
+        display: inline;
+    }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 
 
-section {
-    margin: 60px 0px;
-}
+    section {
+        margin: 60px 0px;
+    }
 
-aside {
-    margin: 0px 30px;
-}
+    aside {
+        margin: 0px 30px;
+    }
 
-p{
-    font-weight: 100;
-}
+    p{
+        font-weight: 100;
+    }
+
+    .button {
+        background: rgb(22, 142, 255);
+        border: 1px solid rgb(22, 142, 255);
+        border-radius: 20px 0px 20px 0px;
+        padding: 12px 20px;
+        width: 100px;
+    }
 
 
 /*End of gloabal declarations*/
 
-/*navigation*/
-
-.col-section-2 div{
-    background:rgb(72, 142, 255, 0.1) ;
-}
-
-.col-section-1 div{
-    background:rgb(72, 142, 255, 0.1) ;
-}
-nav {
-    padding: 0 15px;
-    background: #ffffff;
-}
-
-.logo {
-    font-size: 20px;
-    padding: 7.5px 10px 7.5px 0;
-}
-
-.item {
-    padding: 10px;
-}
-
-.item.button {
-    padding: 9px 5px;
-}
-
-.item:not(.button) a:hover,
-.item a:hover::after {
-    color: #ccc;
-}
-
-/*end of navigation*/
-
-#test td {
-    padding:10px  115px;
-    text-align: center;
-}
-
-#test th{
-    padding:10px  110px;
-}
-
-#test th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: center;
-    font-weight: 600;
-}
 
 
-
-#test td:hover {background-color: #ddd;}
-
-.maintenance {
-    display: flex;
-    background: rgb(72, 142, 255, 0.1);
-    padding: 20px;
-
-    background-position: right 100px;
-    z-index: 100;
-
-    background-repeat: no-repeat;
-
-}
-
-.personimage h3{
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.personimage h4{
-    font-size: 25px;
-    font-weight: 300;
-}
-
-.col-section-1 {
-    width: 50%;
-
-}
-.col-section-2 {
-    display: inline;
-    width: 50%;
-    align-items: center;
-
-
-}
-.feuture_on {
-    text-align: center;
-}
-
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu li a {
-    display: block;
-    padding: 15px 5px;
-}
-
-.menu li.subitem a {
-    padding: 15px;
-}
-
-.toggle {
-    order: 1;
-    font-size: 20px;
-}
-
-.featuresour{
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-
-.featuresour h4{
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.sectionimages aside h5{
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.sectionimages aside img{
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.featuresour p{
-    font-size: 20px;
-    font-weight: 100;
-}
-
-.item.button {
-    order: 2;
-}
-
-.item {
-    order: 3;
-    width: 100%;
-    text-align: center;
-    display: none;
-}
-
-.active .item {
-    display: block;
-}
-
-.button.secondary { /* divider between buttons and menu links */
-    border-bottom: 1px #444 solid;
-}
 
 .jumbotoron {
-    background: rgb(72, 142, 255, 0.1);
+    background: rgb(72, 142, 255, 0.07);
 }
 
-.headache h4 {
-
-    font-size: 40px;
-    font-weight: 500;
-}
-
-.headache h5 {
-    font-size: 20px;
-    font-weight: 200;
-    font-style: oblique;
-}
-
-.headache p {
-    font-weight: 200;
-}
-
-.button {
-    background: rgb(22, 142, 255);
-    border: 1px solid rgb(22, 142, 255);
-    border-radius: 20px 0px 20px 0px;
-
-    padding: 12px 20px;
-    width: 100px;
-}
-
-.headache {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px 0px;
-}
-
-.clients {
-    text-align: center;
-}
-
-.say {
-    margin-bottom: 30px;
-}
-
-.person {
-    display: flex;
-    justify-content: center;
-}
-
-.person1 {
-    padding: 0px 15px;
-}
-
-.clientsbackground {
-    background: rgb(72, 142, 255, 0.1);
-    padding: 20px 0px;
-}
-
-.explainto {
-    background: rgb(44, 57, 100);
-    padding: 50px;
-    color: white;
-    border: 1px solid rgb(44, 57, 100);
-    border-radius: 0px 30px 0px 30px;
-    display: flex;
-}
-
-.explainbutton {
-    postion: relative;
-
-}
-
-.explainbutton .button {
-    position: absolute;
-    button: 50px;
-}
-
-.copyright{
-    margin-top: 50px;
-}
-
-/* Responsive */
 
 
-@media only screen and (min-width: 600px) {
-    .explainto {
-        display: flex;
-    }
-
-    .explainleft {
-
-        margin-right: 70px;
-    }
-
-    .sectionimages {
-        display: flex;
-    }
+/*navigation*/
 
 
-    .logosection {
-        display: flex;
-        margin: 30px 0px;
-    }
-
-    .logosection div {
-        margin: 0 26px;
-    }
-
-    .menu {
-        justify-content: center;
+    nav {
+        padding: 0 15px;
+        background: #ffffff;
     }
 
     .logo {
-        flex: 1;
-    }
-
-    .item.button {
-        width: auto;
-        order: 1;
-        display: block;
-    }
-
-    .toggle {
-        flex: 1;
-        text-align: right;
-        order: 2;
-    }
-
-    /* Button up from tablet screen */
-    .menu li.button a {
-        padding: 10px 15px;
-        margin: 5px 0;
-    }
-
-    .button a {
-        background: #0080ff;
-        border: 1px royalblue solid;
-    }
-
-    .button.secondary {
-        border: 0;
-    }
-
-    .button.secondary a {
-        background: transparent;
-        border: 1px #0080ff solid;
-    }
-
-    .button a:hover {
-        text-decoration: none;
-    }
-
-    .button:not(.secondary) a:hover {
-        background: royalblue;
-        border-color: darkblue;
-    }
-
-    .menu {
-        align-items: flex-start;
-        flex-wrap: nowrap;
-        background: none;
-    }
-
-    .logo {
-        order: 0;
+        font-size: 20px;
+        padding: 7.5px 10px 7.5px 0;
     }
 
     .item {
-        order: 1;
-        position: relative;
-        display: block;
-        width: auto;
+        padding: 10px;
     }
 
-    .button {
-        order: 2;
+    .item.button {
+        padding: 9px 5px;
     }
 
-    .submenu-active .submenu {
+    .item:not(.button) a:hover,
+    .item a:hover::after {
+        color: #ccc;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu li a {
         display: block;
-        position: absolute;
-        left: 0;
-        top: 68px;
-        background: #111;
+        padding: 15px 5px;
+    }
+
+    .menu li.subitem a {
+        padding: 15px;
     }
 
     .toggle {
+        order: 1;
+        font-size: 20px;
+    }
+
+    .item.button {
+        order: 2;
+    }
+
+    .item {
+        order: 3;
+        width: 100%;
+        text-align: center;
         display: none;
     }
 
-    .submenu-active {
-        border-radius: 0;
+    .active .item {
+        display: block;
     }
 
+    .button.secondary { /* divider between buttons and menu links */
+        border-bottom: 1px #444 solid;
+    }
 
+/*end of navigation*/
+
+
+
+
+/*Section wordpress headahce*/
+    .headache {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px 0px;
+    }
+
+    .headache h4 {
+
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .headache h5 {
+        font-size: 20px;
+        font-weight: 200;
+        font-style: oblique;
+    }
+
+    .headache p {
+        font-weight: 200;
+    }
+/*End of section wordpress headache*/
+
+
+/*Features On*/
+.feuture_on {
+    text-align: center;
 }
+/*End of Features on*/
+
+
+
+/* Menteinance */
+    .maintenance {
+
+        background: rgb(72, 142, 255, 0.07);
+        padding: 20px;
+
+        background-position: right 100px;
+        z-index: 100;
+
+        background-repeat: no-repeat;
+
+    }
+/*End of Menteinance*/
+
+
+
+/*Our Features*/
+    .featuresour{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .featuresour h4{
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .featuresour p{
+        font-size: 20px;
+        font-weight: 100;
+    }
+/*End of Our Features*/
+
+
+
+
+/*Section with imagess of two part*/
+    .personimage h3{
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .personimage h4{
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .col-section-1 {
+
+        text-align: center;
+    }
+    .col-section-2 {
+
+        text-align: center;
+    }
+
+    .sectionimages aside h5{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .sectionimages aside img{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+.col-section-2 div{
+    padding: 20px;
+    background:rgb(72, 142, 255, 0.07) ;
+}
+
+.col-section-1 div{
+    padding: 30px;
+    background:rgb(72, 142, 255, 0.07) ;
+}
+
+
+/*End of section with images of two parts*/
+
+
+
+/*Styles of what clints says*/
+    .clients {
+        text-align: center;
+    }
+
+    .say {
+        margin-bottom: 30px;
+    }
+
+    .person {
+        display: flex;
+        justify-content: center;
+    }
+
+    .person1 {
+        padding: 0px 15px;
+    }
+
+    .clientsbackground {
+        background: rgb(72, 142, 255, 0.07);
+        padding: 20px 0px;
+    }
+/*End of what clients says*/
+
+
+
+
+/*Styles of Explaination*/
+    .explainto {
+        background: rgb(44, 57, 100);
+        padding: 50px;
+        color: white;
+        border: 1px solid rgb(44, 57, 100);
+        border-radius: 0px 30px 0px 30px;
+
+    }
+
+    .explainbutton {
+        postion: relative;
+
+    }
+
+    .explainbutton .button {
+        position: absolute;
+        button: 50px;
+    }
+/*End of Explaination*/
+
+
+
+
+/*Footer*/
+
+    #test td {
+        padding:10px  115px;
+        text-align: center;
+    }
+
+    #test th{
+        padding:10px  110px;
+    }
+
+    #test th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #test td:hover {background-color: #ddd;}
+
+    .copyright{
+        margin-top: 50px;
+    }
+/*End of Footer*/
+
+@media only screen and (max-width: 700px){
+    img{
+        width: 80%;
+
+    }
+    #test{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
